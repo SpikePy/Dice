@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Random Number</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body onload="test()">
+  <h1 ><img src="favicon.svg">Random Number</h1>
+  <table>
+    <tr>
+      <td>Min</td>
+      <td>Max</td>
+      <td>Result</td>
+    </tr>
+    <tr>
+      <td><input  type="number" id="min"    size="5" oninput="test()"></td>
+      <td><input  type="number" id="max"    size="5" oninput="test()"></td>
+      <td><input  type="number" id="result" size="5" disabled></td>
+    </tr>
+    <tr>
+      <td colspan="3"><button type="button" id="button" name="button" onclick="random()" disabled>Generate</button></td>
+    </tr>
+  </table>
+</body>
+</html>
