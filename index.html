@@ -10,15 +10,24 @@
 </head>
 <body onload="test()">
   <h1 ><img src="favicon.svg">Random Number</h1>
-  <table>
-    <tr>
-      <td><input  type="number" id="min"    size="5" placeholder="min"    oninput="test()"></td>
-      <td><input  type="number" id="max"    size="5" placeholder="max"    oninput="test()"></td>
-      <td><input  type="number" id="result" size="5" placeholder="result" disabled></td>
-    </tr>
-    <tr>
-      <td colspan="3"><button type="button" id="button" name="button" onclick="random()" disabled>Generate</button></td>
-    </tr>
-  </table>
+  <div>
+    <table>
+      <tr>
+        <td>Min: </td>
+        <td><input  type="number" id="min" size="5" oninput="test()"></td>
+      </tr>
+      <tr>
+        <td>Max: </td>
+        <td><input  type="number" id="max" size="5" oninput="test()"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="button" id="button" name="button" onclick="random()" disabled>Generate</button></td>
+      </tr>
+      <tr>
+        <td>Result: </td>
+        <td><input  type="number" id="result" size="5" disabled></td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>

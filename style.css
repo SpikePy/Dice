@@ -14,25 +14,23 @@ h1 > img {
   padding: .3em;
 }
 
-table {
+div {
   margin: 0 auto 0;
-}
-
-td {
-  padding: .5em;
-  text-align:center;
+  text-align: center;
 }
 
 input {
+  display: block;
   font-size: 1.5em;
   border-radius: .3em;
   border: 0;
-  width: 2.5em;
   padding: .5em;
+  /* margin: .5em auto; */
   text-align: right;
   background-color: rgb(240, 240, 240);
   -moz-appearance: textfield;
   transition: background-color .5s ease;
+  width: 4em;
 }
 input:hover {
     background-color: rgb(220, 220, 220);
@@ -44,14 +42,25 @@ input:hover {
     background-color: rgb(240, 240, 240);
 }
 
+table {
+  margin: 0 auto 0;
+}
+
+td {
+  padding: .2em;
+  text-align:right;
+}
+
 button {
+  display: block;
   font-size: 1.5em;
   border: 0;
   border-radius: .3em;
-  padding: 1em .5em;
-  width: 100%;
+  padding: .5em;
+  /* margin: .5em auto; */
   transition: background-color .5s ease;
   background-color: rgb(220, 235, 220);
+  width: 100%;
 }
 button:hover {
     /* background-color: rgb(220, 220, 220); */
