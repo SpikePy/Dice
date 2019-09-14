@@ -32,11 +32,12 @@ input {
   text-align: right;
   background-color: rgb(240, 240, 240);
   -moz-appearance: textfield;
+  transition: background-color .5s ease;
 }
 input:hover {
     background-color: rgb(220, 220, 220);
 }
-#result:disabled {
+#result {
   color: black;
 }
 #result:hover {

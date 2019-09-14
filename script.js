@@ -11,4 +11,10 @@ function test() {
 
 function random() {
   result.value = Math.round( min + Math.random() * (max - min) )
+
+  // Make result cell blink once for 200ms
+  result.style.backgroundColor = "rgb(220, 220, 220)"
+  setTimeout(() => {
+    result.style.backgroundColor = "rgb(240, 240, 240)"
+  }, 200);
 }
