@@ -72,3 +72,18 @@ button:active {
 button:disabled {
     background-color: rgb(235, 220, 220);
 }
+
+input:enabled, button {
+  animation: blinking 1.3s 1;
+}
+@keyframes blinking {
+  0%{
+    filter: brightness(1);
+  }
+  50%{
+    filter: brightness(.9);
+  }
+  100%{
+    filter: brightness(1);
+  }
+}
